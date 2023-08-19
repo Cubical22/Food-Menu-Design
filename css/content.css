@@ -6,6 +6,7 @@
 }
 
 .content-header {
+    color: var(--bg-c);
     font-size: 3rem;
     background-color: var(--main-c);
     width: 100%;

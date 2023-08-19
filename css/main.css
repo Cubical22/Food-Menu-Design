@@ -10,8 +10,8 @@
 }
 
 :root {
-    --main-c: hsl(8, 87%, 63%);
-    --main-c-dark: hsl(8, 51%, 41%);
+    --main-c: hsl(0, 70%, 41%);
+    --main-c-dark: hsl(17, 65%, 67%);
     --bg-c: rgb(230, 230, 230);
 }
 
