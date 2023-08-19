@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+:root {
+    --main-c: hsl(8, 87%, 63%);
+    --main-c-dark: hsl(8, 51%, 41%);
+}
