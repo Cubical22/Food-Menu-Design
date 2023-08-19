@@ -7,6 +7,20 @@
 
 .content-header {
     font-size: 3rem;
+    background-color: var(--main-c);
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 5px solid var(--main-c-dark);
+
+
+    cursor: pointer;
+
+    transition: color 0.14s ease-out;
+}
+
+.content-header:hover {
+    color: var(--main-c-dark);
 }
 
 .content-info {
