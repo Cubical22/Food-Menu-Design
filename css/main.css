@@ -26,7 +26,8 @@ body {
     height: 100vh;
     top: 0;
     background-color: var(--main-c-dark);
-    clip-path: polygon(calc(100% - 500px) 0, 100% 0, 100% 100%, calc(100% - 200px) 100%, calc(100% - 500px) 0);
+    clip-path: polygon(calc(100% - 500px) 0, 100% 0, 100% 100%,
+     calc(100% - 200px) 100%, calc(100% - 500px) 0);
     z-index: -2;
 }
 
@@ -34,7 +35,7 @@ body {
     height: 80vh;
     aspect-ratio: 1/1;
     position: fixed;
-    top: calc(50% - 35vh);
+    bottom: calc(50vh - 45%);
     right: -24%;
     animation: pizza-rotate 35s linear infinite;
     z-index: 2;
