@@ -1,0 +1,14 @@
+.main-content-holder {
+    position: absolute;
+    top: 140px;
+    left: 70px;
+    max-width: max(calc(100vw - 50%), 417px);
+}
+
+.content-header {
+    font-size: 3rem;
+}
+
+.content-info {
+    font-size: 1.2rem;
+}

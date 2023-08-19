@@ -1,4 +1,6 @@
 @import url("/css/nav.css");
+@import url("/css/content.css");
+@import url(/css/835.css);
 
 * {
     margin: 0;
@@ -25,7 +27,7 @@ body {
     top: 0;
     background-color: var(--main-c-dark);
     clip-path: polygon(calc(100% - 500px) 0, 100% 0, 100% 100%, calc(100% - 200px) 100%, calc(100% - 500px) 0);
-    z-index: -1;
+    z-index: -2;
 }
 
 .floating-pizza-img {
@@ -35,6 +37,7 @@ body {
     top: calc(50% - 35vh);
     right: -24%;
     animation: pizza-rotate 35s linear infinite;
+    z-index: 2;
 }
 
 @keyframes pizza-rotate {
