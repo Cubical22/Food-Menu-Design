@@ -15,4 +15,8 @@
     .bottom-space {
         height: 200px;
     }
+
+    .floating-pizza-img.hide {
+        translate: 155vw 0 !important;
+    }
 }

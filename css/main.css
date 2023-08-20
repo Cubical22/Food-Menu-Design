@@ -42,6 +42,12 @@ body {
     right: -24%;
     animation: pizza-rotate 35s linear infinite;
     z-index: 2;
+
+    transition: translate 1s ease-in-out;
+}
+
+.floating-pizza-img.hide {
+    translate: 55% 0;
 }
 
 @keyframes pizza-rotate {

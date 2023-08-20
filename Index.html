@@ -100,8 +100,14 @@
 
             // updating the source of the the image based on the option selected. more improvements will be done lator
             // including a movement animation
-            floatingImage.setAttribute("src",
-            `/assets/food/${orderElements[lastIndexSelected].getAttribute("floatingImageLink")}.png`);
+
+            floatingImage.classList.add("hide");
+            setTimeout(()=>{
+                floatingImage.classList.remove("hide");
+                floatingImage.setAttribute("src",
+                `/assets/food/${orderElements[lastIndexSelected].getAttribute("floatingImageLink")}.png`);
+            },1000);
+            
         }
 
         // making sure the first index is always on view by default

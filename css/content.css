@@ -1,6 +1,6 @@
 .main-content-holder {
     position: absolute;
-    top: 140px;
+    top: 120px;
     left: 70px;
     width: max(calc(100vw - 50%), 417px);
 }
@@ -25,7 +25,7 @@
 }
 
 .bottom-space {
-    height: 100px;
+    height: 0;
 }
 
 .order-list {
