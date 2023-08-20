@@ -1,8 +1,4 @@
 @media (max-width: 835px) {
-    .main-content-holder {
-        max-width: calc(100vw - 140px);
-    }
-
     .floating-pizza-img {
         right: 50% !important;
         bottom: -60% !important;
@@ -13,7 +9,10 @@
     .main-content-holder {
         top: 120px !important;
         left: 35px !important;
-        max-width: calc(100% - 70px) !important;
-        padding-bottom: 200px;
+        width: calc(100% - 70px) !important;
+    }
+
+    .bottom-space {
+        height: 200px;
     }
 }

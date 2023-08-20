@@ -2,7 +2,7 @@
     position: absolute;
     top: 140px;
     left: 70px;
-    max-width: max(calc(100vw - 50%), 417px);
+    width: max(calc(100vw - 50%), 417px);
 }
 
 .content-header {
@@ -12,7 +12,7 @@
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
-    border: 5px solid var(--main-c-dark);
+    border: 5px solid #1a1a1a;
 
 
     cursor: pointer;
@@ -24,6 +24,11 @@
     color: var(--main-c-dark);
 }
 
-.content-info {
-    font-size: 1.2rem;
+.bottom-space {
+    height: 100px;
+}
+
+.order-list {
+    border: solid black;
+    border-width: 0 0 1px 0;
 }

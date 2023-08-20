@@ -1,0 +1,17 @@
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .nav-control-btn {
+        padding: 10px;
+    }
+
+    .main-content-holder {
+        top: 120px !important;
+        left: 10px !important;
+        width: calc(100% - 20px) !important;
+        padding-bottom: 200px;
+    }
+}

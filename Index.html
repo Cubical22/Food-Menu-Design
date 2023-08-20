@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=no,
+           initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Main Page Design Idea</title>
     <link rel="stylesheet" href="css/main.css">
@@ -20,12 +21,56 @@
     </nav>
     <div class="main-content-holder">
         <h1 class="content-header">Order Right Now!</h1>
-        <p class="content-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam delectus consequatur blanditiis repudiandae. Voluptatum quia dignissimos odit ullam dolorum ad ratione odio, accusamus temporibus vitae repellendus officia praesentium amet itaque.
-        Corrupti asperiores blanditiis voluptate saepe illum, tempora facilis dolorum iste, ipsum expedita, veniam sunt nobis? Saepe voluptas ullam nulla nostrum magnam dolor debitis illo mollitia laboriosam eveniet, officia ut earum?
-        Non esse explicabo at? Veritatis ullam necessitatibus doloribus, sit natus harum inventore tenetur quasi facere distinctio neque commodi voluptates dolorem quibusdam qui minus blanditiis consequuntur. Temporibus doloremque optio rem voluptas?</p>
+        <div class="order-list" id="order-list">
+            <!-- <div class="order">
+                <h3 class="order-name">peperony</h3>
+                <div class="order-ordering-side">
+                    <p class="order-prize">10$</p>
+                    <button aria-describedby="view button" title="view button" 
+                    type="button" class="order-view-button"><img src="/assets/eye-off.svg" alt=""></button>
+                    <button type="button" title="add to orders" class="order-add-button">+</button>
+                </div>
+            </div> -->
+        </div>
+        <div class="bottom-space"></div>
     </div>
 
     <div class="bg-cross-line"></div>
     <img src="assets/pizza.png" alt="" class="floating-pizza-img">
+
+    <!-- this script is used to add the menu as items. the point is using this approach, we will 
+    be able to not only change these values real-time, but also even fetch them from a server, and ... -->
+    <script>
+        const orders = [
+            {name: "Peperoni", prize: 10},
+            {name: "Mixed", prize: 15},
+            {name: "Meat", prize: 7},
+            {name: "Salad", prize: 3},
+            {name: "Sezar", prize: 5},
+            {name: "Burger", prize: 13},
+            {name: "Shells", prize: 8},
+            {name: "Lazania", prize: 14},
+            {name: "Cake", prize: 18},
+        ];
+        const list = document.getElementById("order-list");
+
+        function addOrdersToList() {
+            orders.forEach(order=>{
+                const orderElement = document.createElement("div");
+                orderElement.classList.add("order");
+                orderElement.innerHTML = `
+                    <h3 class="order-name">${order.name}</h3>
+                    <div class="order-ordering-side">
+                        <p class="order-prize">${order.prize}$</p>
+                        <button aria-describedby="view button" title="view button" 
+                        type="button" class="order-view-button"><img src="/assets/eye-off.svg" alt=""></button>
+                        <button type="button" title="add to orders" class="order-add-button">+</button>
+                    </div>
+                `;
+
+                list.appendChild(orderElement);
+            });
+        } addOrdersToList();
+    </script>
 </body>
 </html>

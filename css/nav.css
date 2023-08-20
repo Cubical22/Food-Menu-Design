@@ -1,9 +1,12 @@
 nav {
+    position: fixed;
     width: 100%;
     display: flex;
     align-items: stretch;
     justify-content: space-between;
     background: #1a1a1a;
+
+    z-index: 2;
 }
 
 .nav-controls {
@@ -59,15 +62,4 @@ nav {
 
 .page-name:hover {
     color: var(--main-c);
-}
-
-@media (max-width: 480px) {
-    nav {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .nav-control-btn {
-        padding: 10px;
-    }
 }
