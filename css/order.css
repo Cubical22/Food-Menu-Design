@@ -42,6 +42,8 @@
 
     min-height: 100%;
     aspect-ratio: 1/1;
+
+    transition: background-color 0.14s ease-in;
 }
 
 .order-view-button {
@@ -54,9 +56,17 @@
     scale: 140%;
 }
 
+.order-view-button:hover {
+    background-color: var(--main-c-dark);
+}
+
 .order-add-button {
     aspect-ratio: 1/1;
     background-color: green;
     padding: 12px;
     color: white;
+}
+
+.order-add-button:hover {
+    background-color: rgb(62, 151, 62);
 }
